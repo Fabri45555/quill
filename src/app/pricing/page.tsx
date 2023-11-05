@@ -24,60 +24,60 @@ const Page = () => {
 
   const pricingItems = [
     {
-      plan: 'Free',
-      tagline: 'For small side projects.',
+      plan: 'Gratis',
+      tagline: 'Per progetti di piccole dimesioni.',
       quota: 10,
       features: [
         {
-          text: '5 pages per PDF',
+          text: '5 pagine per PDF',
           footnote:
-            'The maximum amount of pages per PDF-file.',
+            'Il massimo numero di pagine per file PDF.',
         },
         {
-          text: '4MB file size limit',
+          text: 'Dimensione massima 4MB',
           footnote:
-            'The maximum file size of a single PDF file.',
+            'La massima dimensione di un singolo file PDF.',
         },
         {
-          text: 'Mobile-friendly interface',
+          text: 'Interfaccia Mobile-friendly',
         },
         {
-          text: 'Higher-quality responses',
+          text: 'Risposte di alta qualità',
           footnote:
-            'Better algorithmic responses for enhanced content quality',
+            'Le migliori risposte algoritmiche, per delle risposte uniche.',
           negative: true,
         },
         {
-          text: 'Priority support',
+          text: 'Supporto prioritario',
           negative: true,
         },
       ],
     },
     {
       plan: 'Pro',
-      tagline: 'For larger projects with higher needs.',
+      tagline: 'Per progetti più ampi con diversi bisogni.',
       quota: PLANS.find((p) => p.slug === 'pro')!.quota,
       features: [
         {
-          text: '25 pages per PDF',
+          text: '25 pagine per PDF',
           footnote:
-            'The maximum amount of pages per PDF-file.',
+            'Il massimo numero di pagine per file PDF.',
         },
         {
-          text: '16MB file size limit',
+          text: 'Dimensione massima 16MB',
           footnote:
-            'The maximum file size of a single PDF file.',
+            'La massima dimensione di un singolo file PDF.',
         },
         {
-          text: 'Mobile-friendly interface',
+          text: 'Interfaccia Mobile-friendly',
         },
         {
-          text: 'Higher-quality responses',
+          text: 'Risposte di alta qualità',
           footnote:
-            'Better algorithmic responses for enhanced content quality',
+            'Le migliori risposte algoritmiche, per delle risposte uniche.',
         },
         {
-          text: 'Priority support',
+          text: 'Supporto prioritario',
         },
       ],
     },
@@ -88,11 +88,11 @@ const Page = () => {
       <MaxWidthWrapper className='mb-8 mt-24 text-center max-w-5xl'>
         <div className='mx-auto mb-10 sm:max-w-lg'>
           <h1 className='text-6xl font-bold sm:text-7xl'>
-            Pricing
+            Prezzi
           </h1>
           <p className='mt-5 text-gray-600 sm:text-lg'>
-            Whether you&apos;re just trying out our service
-            or need more, we&apos;ve got you covered.
+            Che stia semplicemente provando il nostro servizio
+            o nel caso tu ne abbia bisogno, abbiamo la soluzione per te.
           </p>
         </div>
 
@@ -119,8 +119,8 @@ const Page = () => {
                     )}>
                     {plan === 'Pro' && (
                       <div className='absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-2 text-sm font-medium text-white'>
-                        Upgrade now
-                      </div>
+                        Abbonati ora
+                        </div>
                     )}
 
                     <div className='p-5'>
@@ -131,10 +131,10 @@ const Page = () => {
                         {tagline}
                       </p>
                       <p className='my-5 font-display text-6xl font-semibold'>
-                        ${price}
+                      €{price}
                       </p>
                       <p className='text-gray-500'>
-                        per month
+                        al mese
                       </p>
                     </div>
 
@@ -142,7 +142,7 @@ const Page = () => {
                       <div className='flex items-center space-x-1'>
                         <p>
                           {quota.toLocaleString()} PDFs/mo
-                          included
+                          inclusi
                         </p>
 
                         <Tooltip delayDuration={300}>
@@ -150,8 +150,7 @@ const Page = () => {
                             <HelpCircle className='h-4 w-4 text-zinc-500' />
                           </TooltipTrigger>
                           <TooltipContent className='w-80 p-2'>
-                            How many PDFs you can upload per
-                            month.
+                           Quanti files PDF puoi caricare mensilmente.
                           </TooltipContent>
                         </Tooltip>
                       </div>
@@ -219,7 +218,7 @@ const Page = () => {
                             className: 'w-full',
                             variant: 'secondary',
                           })}>
-                          {user ? 'Upgrade now' : 'Sign up'}
+                           {user ? 'Aggiorna ora' : 'Iscriviti'}
                           <ArrowRight className='h-5 w-5 ml-1.5' />
                         </Link>
                       ) : user ? (
@@ -230,7 +229,7 @@ const Page = () => {
                           className={buttonVariants({
                             className: 'w-full',
                           })}>
-                          {user ? 'Upgrade now' : 'Sign up'}
+                          {user ? 'Aggiorna ora' : 'Iscriviti'}
                           <ArrowRight className='h-5 w-5 ml-1.5' />
                         </Link>
                       )}

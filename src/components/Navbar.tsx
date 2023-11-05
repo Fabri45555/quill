@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link
             href='/'
             className='flex z-40 font-semibold'>
-            <span>quill.</span>
+            <span>BoltStudy</span>
           </Link>
 
           <MobileNav isAuth={!!user} />
@@ -35,20 +35,20 @@ const Navbar = () => {
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                  Pricing
+                  Prezzi
                 </Link>
                 <LoginLink
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                  Sign in
-                </LoginLink>
+                    Registrati
+                  </LoginLink>
                 <RegisterLink
                   className={buttonVariants({
                     size: 'sm',
                   })}>
-                  Get started{' '}
+                  Inizia{' '}
                   <ArrowRight className='ml-1.5 h-5 w-5' />
                 </RegisterLink>
               </>

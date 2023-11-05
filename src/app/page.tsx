@@ -10,18 +10,16 @@ export default function Home() {
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
         <div className='mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50'>
           <p className='text-sm font-semibold text-gray-700'>
-            Quill is now public!
+            BoltStudy è ora disponibile!
           </p>
         </div>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>
-          Chat with your{' '}
-          <span className='text-blue-600'>documents</span>{' '}
-          in seconds.
+          Dialoga con i tuoi{' '}
+          <span className='text-blue-600'>documenti.</span>{' '}
         </h1>
         <p className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
-          Quill allows you to have conversations with any
-          PDF document. Simply upload your file and start
-          asking questions right away.
+          BoltStudy ti permette di avere conversazioni con documenti PDF.
+          Carica il tuo file e comincia a fargli delle domande.
         </p>
 
         <Link
@@ -31,7 +29,7 @@ export default function Home() {
           })}
           href='/dashboard'
           target='_blank'>
-          Get started{' '}
+          Inizia{' '}
           <ArrowRight className='ml-2 h-5 w-5' />
         </Link>
       </MaxWidthWrapper>
@@ -87,11 +85,10 @@ export default function Home() {
         <div className='mb-12 px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
-              Start chatting in minutes
+              Inizia a chattare
             </h2>
             <p className='mt-4 text-lg text-gray-600'>
-              Chatting to your PDF files has never been
-              easier than with Quill.
+              Con BoltStudy chattare con un file PDF non è mai stato così facile.
             </p>
           </div>
         </div>
@@ -101,18 +98,18 @@ export default function Home() {
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 1
+                Primo Passo
               </span>
               <span className='text-xl font-semibold'>
-                Sign up for an account
+                Registrati e crea un account
               </span>
               <span className='mt-2 text-zinc-700'>
-                Either starting out with a free plan or
-                choose our{' '}
+                Inizia con un piano gratuito oppure
+                scegli il nostro{' '}
                 <Link
                   href='/pricing'
                   className='text-blue-700 underline underline-offset-2'>
-                  pro plan
+                  piano pro
                 </Link>
                 .
               </span>
@@ -121,28 +118,27 @@ export default function Home() {
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 2
+                Secondo Passo
               </span>
               <span className='text-xl font-semibold'>
-                Upload your PDF file
+                Carica il tuo file PDF
               </span>
               <span className='mt-2 text-zinc-700'>
-                We&apos;ll process your file and make it
-                ready for you to chat with.
+                Processeremo il tuo file e lo prepareremo per farti chattare con esso.
               </span>
             </div>
           </li>
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-600'>
-                Step 3
+                Terzo Passo
               </span>
               <span className='text-xl font-semibold'>
-                Start asking questions
+                Fai qualche domanda
               </span>
               <span className='mt-2 text-zinc-700'>
-                It&apos;s that simple. Try out Quill today -
-                it really takes less than a minute.
+                Sarà così semplice. Prova BoltStudy oggi -
+                ci vuole meno di un minuto.
               </span>
             </div>
           </li>

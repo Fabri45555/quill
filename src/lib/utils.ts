@@ -16,8 +16,8 @@ export function absoluteUrl(path: string) {
 }
 
 export function constructMetadata({
-  title = "Quill - the SaaS for students",
-  description = "Quill is an open-source software to make chatting to your PDF files easy.",
+  title = "BoltStudy - il SaaS per studenti",
+  description = "BoltStudy è un software per dialogare con i tuoi files PDF facilmente.",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false

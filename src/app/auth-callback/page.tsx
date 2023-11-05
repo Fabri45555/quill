@@ -31,9 +31,9 @@ const Page = () => {
       <div className='flex flex-col items-center gap-2'>
         <Loader2 className='h-8 w-8 animate-spin text-zinc-800' />
         <h3 className='font-semibold text-xl'>
-          Setting up your account...
+          Stiamo creando il tuo account...
         </h3>
-        <p>You will be redirected automatically.</p>
+        <p>Sarai redirezionato automaticamente.</p>
       </div>
     </div>
   )
