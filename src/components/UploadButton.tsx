@@ -72,8 +72,8 @@ const UploadDropzone = ({
 
         if (!res) {
           return toast({
-            title: 'Something went wrong',
-            description: 'Please try again later',
+            title: 'Qualcosa è andato storto.',
+            description: 'Perfavore prova di nuovo.',
             variant: 'destructive',
           })
         }
@@ -84,8 +84,8 @@ const UploadDropzone = ({
 
         if (!key) {
           return toast({
-            title: 'Something went wrong',
-            description: 'Please try again later',
+            title: 'Qualcosa è andato storto.',
+            description: 'Perfavore prova di nuovo.',
             variant: 'destructive',
           })
         }
@@ -107,12 +107,12 @@ const UploadDropzone = ({
                 <Cloud className='h-6 w-6 text-zinc-500 mb-2' />
                 <p className='mb-2 text-sm text-zinc-700'>
                   <span className='font-semibold'>
-                    Click to upload
+                    Fai click per caricare
                   </span>{' '}
-                  or drag and drop
+                  oppure trascina e rilascia.
                 </p>
                 <p className='text-xs text-zinc-500'>
-                  PDF (up to {isSubscribed ? "16" : "4"}MB)
+                  PDF (fino a {isSubscribed ? "16" : "4"}MB)
                 </p>
               </div>
 
