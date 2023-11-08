@@ -14,7 +14,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
 
   useEffect(() => {
     if (isOpen) toggleOpen()
-  }, [pathname])
+  }, [isOpen, pathname])
 
   const closeOnCurrent = (href: string) => {
     if (pathname === href) {
@@ -41,7 +41,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                     }
                     className='flex items-center w-full font-semibold text-green-600'
                     href='/sign-up'>
-                    Get started
+                    Inizia
                     <ArrowRight className='ml-2 h-5 w-5' />
                   </Link>
                 </li>
@@ -53,7 +53,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                     }
                     className='flex items-center w-full font-semibold'
                     href='/sign-in'>
-                    Sign in
+                    Registrati
                   </Link>
                 </li>
                 <li className='my-3 h-px w-full bg-gray-300' />
@@ -64,7 +64,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                     }
                     className='flex items-center w-full font-semibold'
                     href='/pricing'>
-                    Pricing
+                    Prezzi
                   </Link>
                 </li>
               </>
@@ -85,7 +85,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                   <Link
                     className='flex items-center w-full font-semibold'
                     href='/sign-out'>
-                    Sign out
+                    Esci
                   </Link>
                 </li>
               </>

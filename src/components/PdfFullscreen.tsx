@@ -54,8 +54,8 @@ const PdfFullscreen = ({ fileUrl }: PdfFullscreenProps) => {
               }
               onLoadError={() => {
                 toast({
-                  title: 'Error loading PDF',
-                  description: 'Please try again later',
+                  title: 'Errore nel caricamento del PDF',
+                  description: 'Perfavore prova di nuovo',
                   variant: 'destructive',
                 })
               }}

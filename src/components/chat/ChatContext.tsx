@@ -122,9 +122,9 @@ export const ChatContextProvider = ({
 
       if (!stream) {
         return toast({
-          title: 'There was a problem sending this message',
+          title: 'C\'è stato un problema nell\'invio del messaggio',
           description:
-            'Please refresh this page and try again',
+            'Perfavore ricarica la pagina e riprova',
           variant: 'destructive',
         })
       }

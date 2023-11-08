@@ -39,10 +39,10 @@ const ChatWrapper = ({
           <div className='flex flex-col items-center gap-2'>
             <Loader2 className='h-8 w-8 text-blue-500 animate-spin' />
             <h3 className='font-semibold text-xl'>
-              Loading...
+              Caricamento...
             </h3>
             <p className='text-zinc-500 text-sm'>
-              We&apos;re preparing your PDF.
+              Stiamo preparando il tuo PDF.
             </p>
           </div>
         </div>
@@ -58,10 +58,10 @@ const ChatWrapper = ({
           <div className='flex flex-col items-center gap-2'>
             <Loader2 className='h-8 w-8 text-blue-500 animate-spin' />
             <h3 className='font-semibold text-xl'>
-              Processing PDF...
+              Processando il PDF...
             </h3>
             <p className='text-zinc-500 text-sm'>
-              This won&apos;t take long.
+              Non ci impiegherà molto.
             </p>
           </div>
         </div>
@@ -77,20 +77,20 @@ const ChatWrapper = ({
           <div className='flex flex-col items-center gap-2'>
             <XCircle className='h-8 w-8 text-red-500' />
             <h3 className='font-semibold text-xl'>
-              Too many pages in PDF
+              Troppe pagine nel PDF
             </h3>
             <p className='text-zinc-500 text-sm'>
-              Your{' '}
+              Il tuo piano{' '}
               <span className='font-medium'>
-                {isSubscribed ? 'Pro' : 'Free'}
+                {isSubscribed ? 'Pro' : 'Gratis'}
               </span>{' '}
-              plan supports up to{' '}
+               supporta fino a{' '}
               {isSubscribed
                 ? PLANS.find((p) => p.name === 'Pro')
                     ?.pagesPerPdf
                 : PLANS.find((p) => p.name === 'Free')
                     ?.pagesPerPdf}{' '}
-              pages per PDF.
+              pagine per PDF.
             </p>
             <Link
               href='/dashboard'
@@ -99,7 +99,7 @@ const ChatWrapper = ({
                 className: 'mt-4',
               })}>
               <ChevronLeft className='h-3 w-3 mr-1.5' />
-              Back
+              Indietro
             </Link>
           </div>
         </div>
